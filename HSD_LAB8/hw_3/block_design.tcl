@@ -1,4 +1,4 @@
-create_bd_design "design_1"
+create_bd_design "design_2"
 startgroup
 create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 processing_system7_0
 endgroup
