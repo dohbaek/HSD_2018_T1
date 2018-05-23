@@ -14,7 +14,7 @@
 
 #define MATRIX_ADDR BRAM_BASE
 #define IPT_VECTOR_ADDR (MATRIX_ADDR + (MATRIX_SIZE * MATRIX_SIZE * sizeof(uint32_t)))
-#define OPT_VECTOR_ADDR (IPT_VECTOR_ADDR + (MATRIX_SIZE * sizeof(uint32_t)))
+#define OPT_VECTOR_ADDR (IPT_VECTOR_ADDR + MATRIX_SIZE * sizeof(uint32_t))
 
 #define INSTRUCTION_ADDR 0x43C00000
 #define MAGIC_CODE 0x5555
@@ -24,14 +24,43 @@ static inline float f16_to_f32(const uint32_t *input);
 double fpga_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float *your_vector_f32)
 {
 	//Map BRAM to virtual memory space and copy data.
-	
+
 	struct timeval start, end;
 	gettimeofday(&start, NULL);
 
 	//Run IP and copy value to DRAM space
-	
+	// memory load
+	int i;
+  int foo;
+	float output_fpga;
+
+  foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
+  float *fpga_bram = mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
+  for (i = 0; i < matrix_size * matrix_size; i++)
+  {
+    *(fpga_bram + i) = ipt_matrix_f16[i];
+  }
+	for (;i<matrix_size*matrix_size+matrix_size;i++)
+	{
+		*(fpga_bram + i) = ipt_vector_f16[i & ((1 << SIZE_SHIFTER) - 1)];
+	}
+
+	// run
+  unsigned int *fpga_ip = mmap(NULL, sizeof(float), PROT_WRITE, MAP_SHARED, foo, INSTRUCTION_ADDR);
+  *fpga_ip = MAGIC_CODE;
+
+  // wait
+  while (*fpga_ip == MAGIC_CODE);
+
+	// result
+	for (i = 0; i < matrix_size; i++)
+	{
+		your_vector_f32[i] = *(fpga_bram+i);
+	}
+
+
 	gettimeofday(&end, NULL);
-	
+
 	//Cleanup allocated resources (optional).
 
 	return (double)(end.tv_sec - start.tv_sec) + ((double)(end.tv_usec - start.tv_usec)) / 1000000.0;
@@ -43,13 +72,10 @@ double arm_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float *
 	struct timeval start, end;
 	gettimeofday(&start, NULL);
 
-	for(size_t i = 0 ; i < matrix_size ; i++)
-	{
-		arm_vector_f32[i] = 0;
-		float vector_element = f16_to_f32(ipt_vector_f16 + i);
-		for(size_t j = 0 ; !(j & (1 << SIZE_SHIFTER)) ; arm_vector_f32[i]
-			+= vector_element * f16_to_f32(ipt_matrix_f16 + (i << SIZE_SHIFTER) + (j++)));
-	}
+	memset(arm_vector_f32, 0, sizeof(float) << SIZE_SHIFTER);
+
+	for(size_t i = -1 ; ++i < matrix_size * matrix_size ; arm_vector_f32[i >> SIZE_SHIFTER]
+		+= f16_to_f32(ipt_matrix_f16 + i) * f16_to_f32(ipt_vector_f16 + (i & ((1 << SIZE_SHIFTER) - 1))));
 
 	gettimeofday(&end, NULL);
 	return (double)(end.tv_sec - start.tv_sec) + ((double)(end.tv_usec - start.tv_usec)) / 1000000.0;
