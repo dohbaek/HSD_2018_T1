@@ -40,8 +40,8 @@ module tb_pecon_bram();
     wire BRAM_RST = 0;
     
     pe_con #(
-        .VECTOR_SIZE(16),
-        .L_RAM_SIZE(4)
+        .VECTOR_SIZE(64),
+        .L_RAM_SIZE(6)
     ) u_con (
         .start(start),
         .aclk(aclk),
@@ -91,7 +91,7 @@ module tb_pecon_bram();
         start <= 0;
         
         wait(done)
-        #(CLOCK_PERIOD*10) $finish; 
+        #(CLOCK_PERIOD*500) $finish; 
         
     end
     
