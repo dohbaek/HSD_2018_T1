@@ -35,6 +35,7 @@ module pe_con#(
     
     
     reg [31:0] wrdata;
+    reg [31:0] calcresult [0:63];
     
     clk_wiz_0 u_clk (.clk_out1(BRAM_CLK), .clk_in1(aclk));
    
@@ -118,7 +119,7 @@ module pe_con#(
     reg done_flag;
     wire done_flag_reset = !aresetn || done_done;
     wire done_flag_en = (state_d == S_CALC) && (state == S_DONE);
-    localparam CNTDONE = 5;
+    localparam CNTDONE = (VECTOR_SIZE) - 1;
     always @(posedge aclk)
         if (done_flag_reset)
             done_flag <= 'd0;
@@ -154,13 +155,19 @@ module pe_con#(
     end endgenerate 
 	assign we_global = (load_flag && counter[13] && !counter[0]) ? 'd1 : 'd0;
 	
-	//S_CALC: wrdata 
+	always @(posedge aclk)
+	   if (!aresetn)
+	       for (
+	       calcresult 
+	
+	
+	//S_DONE: wrdata 
    always @(posedge aclk)
         if (!aresetn)
                 wrdata <= 'd0;
         else
-            if (calc_done)
-                    wrdata <= dout[0];
+            if (done_flag)
+                    wrdata <= calcresult[counter];
             else
                     wrdata <= wrdata;
 
@@ -205,7 +212,7 @@ module pe_con#(
     assign rddata = BRAM_RDDATA;
     assign BRAM_WRDATA = wrdata;
     
-    assign BRAM_ADDR = (done_flag_en)? 0 : { {29-L_RAM_SIZE{1'b0}}, rdaddr, 2'b00};
+    assign BRAM_ADDR = (done_flag)? { {29-L_RAM_SIZE{1'b0}}, rdaddr, 2'b00} : { {29-L_RAM_SIZE{1'b0}}, rdaddr, 2'b00};
     assign BRAM_WE = (done_flag_en)? 4'hF : 0;
     
     genvar j;
