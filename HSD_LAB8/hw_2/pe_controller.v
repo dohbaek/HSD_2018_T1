@@ -1,8 +1,8 @@
 `timescale 1ns / 1ps
 
 module pe_con#(
-       parameter VECTOR_SIZE = 16, // vector size
-	   parameter L_RAM_SIZE = 4
+       parameter VECTOR_SIZE = 64, // vector size
+	   parameter L_RAM_SIZE = 6
     )
     (
         input start,
@@ -24,13 +24,13 @@ module pe_con#(
     wire [31:0] ain;
     wire [31:0] din;
     wire [L_RAM_SIZE-1:0] addr;
-    wire we_local;
+    wire we_local [0:VECTOR_SIZE - 1];
     wire we_global;
     //wire we;
     wire valid;
     wire dvalid;
-    wire [31:0] dout;
-    wire [L_RAM_SIZE:0] rdaddr;
+    wire [31:0] dout [0:VECTOR_SIZE - 1];
+    wire [12:0] rdaddr;
     wire [31:0] rddata;
     
     
@@ -90,7 +90,7 @@ module pe_con#(
     reg load_flag;
     wire load_flag_reset = !aresetn || load_done;
     wire load_flag_en = (state_d == S_IDLE) && (state == S_LOAD);
-    localparam CNTLOAD1 = (4*VECTOR_SIZE) -1;
+    localparam CNTLOAD1 = (130 * VECTOR_SIZE) -1;
     always @(posedge aclk)
         if (load_flag_reset)
             load_flag <= 'd0;
@@ -148,8 +148,11 @@ module pe_con#(
     
     //part3: update output and internal register
     //S_LOAD: we
-	assign we_local = (load_flag && counter[L_RAM_SIZE+1] && !counter[0]) ? 'd1 : 'd0;
-	assign we_global = (load_flag && !counter[L_RAM_SIZE+1] && !counter[0]) ? 'd1 : 'd0;
+    genvar i;
+    generate for (i = 0; i < VECTOR_SIZE; i = i + 1) begin
+        assign we_local[VECTOR_SIZE - 1 - i] = (load_flag && (counter / 128 == i) && !counter[0]) ? 'd1 : 'd0;
+    end endgenerate 
+	assign we_global = (load_flag && counter[13] && !counter[0]) ? 'd1 : 'd0;
 	
 	//S_CALC: wrdata 
    always @(posedge aclk)
@@ -157,7 +160,7 @@ module pe_con#(
                 wrdata <= 'd0;
         else
             if (calc_done)
-                    wrdata <= dout;
+                    wrdata <= dout[0];
             else
                     wrdata <= wrdata;
 
@@ -184,12 +187,12 @@ module pe_con#(
 	assign ain = (calc_flag)? gdout : 'd0;
 
 	//S_LOAD&&CALC
-    assign addr = (load_flag)? counter[L_RAM_SIZE:1]:
+    assign addr = (load_flag)? counter[6:1]:
                   (calc_flag)? counter[L_RAM_SIZE-1:0]: 'd0;
 
 	//S_LOAD
 	assign din = (load_flag)? rddata : 'd0;
-    assign rdaddr = (state == S_LOAD)? counter[L_RAM_SIZE+1:1] : 'd0;
+    assign rdaddr = (state == S_LOAD)? counter[13:1] : 'd0;
 
 	//done signals
     assign load_done = (load_flag) && (counter == 'd0);
@@ -205,19 +208,23 @@ module pe_con#(
     assign BRAM_ADDR = (done_flag_en)? 0 : { {29-L_RAM_SIZE{1'b0}}, rdaddr, 2'b00};
     assign BRAM_WE = (done_flag_en)? 4'hF : 0;
     
-    
-    my_pe #(
-        .L_RAM_SIZE(L_RAM_SIZE)
-    ) u_pe (
-        .aclk(aclk),
-        .aresetn(aresetn && (state != S_DONE)),
-        .ain(ain),
-        .din(din),
-        .addr(addr),
-        .we(we_local),
-        .valid(valid),
-        .dvalid(dvalid),
-        .dout(dout)
-    );
+    genvar j;
+    generate 
+        for(j=0; j < VECTOR_SIZE; j = j + 1) begin
+            my_pe #(
+            .L_RAM_SIZE(L_RAM_SIZE)
+            ) u_pe (
+                .aclk(aclk),
+                .aresetn(aresetn && (state != S_DONE)),
+                .ain(ain),
+                .din(din),
+                .addr(addr),
+                .we(we_local[j]),
+                .valid(valid),
+                .dvalid(dvalid),
+                .dout(dout[j])
+            );
+        end
+    endgenerate
 
 endmodule

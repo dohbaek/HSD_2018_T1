@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_pecon_bram_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_pecon_bram" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="272000000001fs"></ZoomEndTime>
+      <Cursor1Time time="191910000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="152"></NameColumnWidth>
+      <ValueColumnWidth column_width="59"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="75" />
+   <wvobject type="logic" fp_name="/tb_pecon_bram/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/aclk">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/BRAM_ADDR">
+      <obj_property name="ElementShortName">BRAM_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/BRAM_WRDATA">
+      <obj_property name="ElementShortName">BRAM_WRDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WRDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/BRAM_WE">
+      <obj_property name="ElementShortName">BRAM_WE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WE[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/BRAM_CLK">
+      <obj_property name="ElementShortName">BRAM_CLK</obj_property>
+      <obj_property name="ObjectShortName">BRAM_CLK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/BRAM_RDDATA">
+      <obj_property name="ElementShortName">BRAM_RDDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_RDDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/BRAM_EN">
+      <obj_property name="ElementShortName">BRAM_EN</obj_property>
+      <obj_property name="ObjectShortName">BRAM_EN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/BRAM_RST">
+      <obj_property name="ElementShortName">BRAM_RST</obj_property>
+      <obj_property name="ObjectShortName">BRAM_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/CLOCK_PERIOD">
+      <obj_property name="ElementShortName">CLOCK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLOCK_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/BRAM_ADDR_WIDTH">
+      <obj_property name="ElementShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider235" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/start">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/aclk">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/BRAM_ADDR">
+      <obj_property name="ElementShortName">BRAM_ADDR[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/BRAM_WRDATA">
+      <obj_property name="ElementShortName">BRAM_WRDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WRDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/BRAM_WE">
+      <obj_property name="ElementShortName">BRAM_WE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WE[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/BRAM_CLK">
+      <obj_property name="ElementShortName">BRAM_CLK</obj_property>
+      <obj_property name="ObjectShortName">BRAM_CLK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/BRAM_RDDATA">
+      <obj_property name="ElementShortName">BRAM_RDDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_RDDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/ain">
+      <obj_property name="ElementShortName">ain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/din">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/addr">
+      <obj_property name="ElementShortName">addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[5:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/we_local">
+      <obj_property name="ElementShortName">we_local[0:63]</obj_property>
+      <obj_property name="ObjectShortName">we_local[0:63]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/we_global">
+      <obj_property name="ElementShortName">we_global</obj_property>
+      <obj_property name="ObjectShortName">we_global</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/counter">
+      <obj_property name="ElementShortName">counter[31:0]</obj_property>
+      <obj_property name="ObjectShortName">counter[31:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/dvalid">
+      <obj_property name="ElementShortName">dvalid</obj_property>
+      <obj_property name="ObjectShortName">dvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/dout">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+      <obj_property name="Radix">REALRADIX</obj_property>
+      <obj_property name="radix_realType">FLOATINGPOINTRADIX</obj_property>
+      <obj_property name="radix_fractionWidth">24</obj_property>
+      <obj_property name="radix_otherWidth">8</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/rdaddr">
+      <obj_property name="ElementShortName">rdaddr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">rdaddr[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/rddata">
+      <obj_property name="ElementShortName">rddata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">rddata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/wrdata">
+      <obj_property name="ElementShortName">wrdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">wrdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/gdout">
+      <obj_property name="ElementShortName">gdout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">gdout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/globalmem">
+      <obj_property name="ElementShortName">globalmem[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">globalmem[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/load_done">
+      <obj_property name="ElementShortName">load_done</obj_property>
+      <obj_property name="ObjectShortName">load_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/calc_done">
+      <obj_property name="ElementShortName">calc_done</obj_property>
+      <obj_property name="ObjectShortName">calc_done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/done_done">
+      <obj_property name="ElementShortName">done_done</obj_property>
+      <obj_property name="ObjectShortName">done_done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/state">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/state_d">
+      <obj_property name="ElementShortName">state_d[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state_d[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/ld_val">
+      <obj_property name="ElementShortName">ld_val[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ld_val[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider302" type="divider">
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /aclk">
+      <obj_property name="ElementShortName">aclk</obj_property>
+      <obj_property name="ObjectShortName">aclk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /aresetn">
+      <obj_property name="ElementShortName">aresetn</obj_property>
+      <obj_property name="ObjectShortName">aresetn</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /ain">
+      <obj_property name="ElementShortName">ain[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ain[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /din">
+      <obj_property name="ElementShortName">din[31:0]</obj_property>
+      <obj_property name="ObjectShortName">din[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /addr">
+      <obj_property name="ElementShortName">addr[5:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[5:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /we">
+      <obj_property name="ElementShortName">we</obj_property>
+      <obj_property name="ObjectShortName">we</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /dvalid">
+      <obj_property name="ElementShortName">dvalid</obj_property>
+      <obj_property name="ObjectShortName">dvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /dout">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /avalid">
+      <obj_property name="ElementShortName">avalid</obj_property>
+      <obj_property name="ObjectShortName">avalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /bvalid">
+      <obj_property name="ElementShortName">bvalid</obj_property>
+      <obj_property name="ObjectShortName">bvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /cvalid">
+      <obj_property name="ElementShortName">cvalid</obj_property>
+      <obj_property name="ObjectShortName">cvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /bin">
+      <obj_property name="ElementShortName">bin[31:0]</obj_property>
+      <obj_property name="ObjectShortName">bin[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /dout_fb">
+      <obj_property name="ElementShortName">dout_fb[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout_fb[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /L_RAM_SIZE">
+      <obj_property name="ElementShortName">L_RAM_SIZE[31:0]</obj_property>
+      <obj_property name="ObjectShortName">L_RAM_SIZE[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[0].u_pe /peram">
+      <obj_property name="ElementShortName">peram[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">peram[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_con/\genblk2[1].u_pe /peram">
+      <obj_property name="ElementShortName">peram[0:63][31:0]</obj_property>
+      <obj_property name="ObjectShortName">peram[0:63][31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider4403" type="divider">
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/BRAM_ADDR">
+      <obj_property name="ElementShortName">BRAM_ADDR[14:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR[14:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_mem/BRAM_CLK">
+      <obj_property name="ElementShortName">BRAM_CLK</obj_property>
+      <obj_property name="ObjectShortName">BRAM_CLK</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/BRAM_WRDATA">
+      <obj_property name="ElementShortName">BRAM_WRDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WRDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/BRAM_RDDATA">
+      <obj_property name="ElementShortName">BRAM_RDDATA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_RDDATA[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_mem/BRAM_EN">
+      <obj_property name="ElementShortName">BRAM_EN</obj_property>
+      <obj_property name="ObjectShortName">BRAM_EN</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_mem/BRAM_RST">
+      <obj_property name="ElementShortName">BRAM_RST</obj_property>
+      <obj_property name="ObjectShortName">BRAM_RST</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/BRAM_WE">
+      <obj_property name="ElementShortName">BRAM_WE[3:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_WE[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_pecon_bram/u_mem/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/addr">
+      <obj_property name="ElementShortName">addr[12:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[12:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/dout">
+      <obj_property name="ElementShortName">dout[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dout[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/BRAM_ADDR_WIDTH">
+      <obj_property name="ElementShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">BRAM_ADDR_WIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/INIT_FILE">
+      <obj_property name="ElementShortName">INIT_FILE[399:0]</obj_property>
+      <obj_property name="ObjectShortName">INIT_FILE[399:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_pecon_bram/u_mem/OUT_FILE">
+      <obj_property name="ElementShortName">OUT_FILE[407:0]</obj_property>
+      <obj_property name="ObjectShortName">OUT_FILE[407:0]</obj_property>
+   </wvobject>
+</wave_config>

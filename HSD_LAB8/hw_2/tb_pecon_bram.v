@@ -40,8 +40,8 @@ module tb_pecon_bram();
     wire BRAM_RST = 0;
     
     pe_con #(
-        .VECTOR_SIZE(16),
-        .L_RAM_SIZE(4)
+        .VECTOR_SIZE(64),
+        .L_RAM_SIZE(6)
     ) u_con (
         .start(start),
         .aclk(aclk),
@@ -57,8 +57,8 @@ module tb_pecon_bram();
     
     my_bram #(
         .BRAM_ADDR_WIDTH(BRAM_ADDR_WIDTH),
-        .INIT_FILE("input.txt"),
-        .OUT_FILE("output.txt")
+        .INIT_FILE("/csehome/dohbaek/HSD_2018_T1/utility/input_hex.txt"),
+        .OUT_FILE("/csehome/dohbaek/HSD_2018_T1/utility/output_hex.txt")
     ) u_mem (
         .BRAM_ADDR(BRAM_ADDR[BRAM_ADDR_WIDTH-1:0]),
         .BRAM_CLK(BRAM_CLK),
