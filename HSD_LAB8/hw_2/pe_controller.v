@@ -29,7 +29,7 @@ module pe_con#(
     //wire [L_RAM_SIZE] matrix_row;
     //wire we;
     wire valid;
-    wire dvalid;
+    wire [VECTOR_SIZE-1:0]dvalid;
     wire [31:0] dout [VECTOR_SIZE-1:0];
     wire [(L_RAM_SIZE*2):0] rdaddr;
     wire [31:0] rddata; //data read from BRAM
@@ -138,7 +138,7 @@ module pe_con#(
                          (calc_flag_en)? CNTCALC1 :
                          (done_flag_en)? CNTDONE  : 'd0;
     wire counter_ld = load_flag_en || calc_flag_en || done_flag_en;
-    wire counter_en = load_flag || dvalid || done_flag;
+    wire counter_en = load_flag || dvalid[0] || done_flag;
     wire counter_reset = !aresetn || load_done || calc_done || done_done;
     always @(posedge aclk)
         if (counter_reset)
@@ -174,7 +174,7 @@ module pe_con#(
                         result[resvar] <= result[resvar];
     end
     endgenerate
-    
+
 
 	//S_CALC: wrdata
    always @(posedge aclk)
@@ -221,7 +221,7 @@ module pe_con#(
 
 	//done signals
     assign load_done = (load_flag) && (counter == 'd0);
-    assign calc_done = (calc_flag) && (counter == 'd0) && dvalid;
+    assign calc_done = (calc_flag) && (counter == 'd0) && dvalid[0];
     assign done_done = (done_flag) && (counter == 'd0);
     assign done = (state == S_DONE) && done_done;
 
@@ -249,7 +249,7 @@ module pe_con#(
         .addr(addr),
         .we(we_local[i]),
         .valid(valid),
-        .dvalid(dvalid),
+        .dvalid(dvalid[i]),
         .dout(dout[i])
     );
     end
