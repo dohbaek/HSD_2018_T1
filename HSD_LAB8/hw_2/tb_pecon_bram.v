@@ -57,8 +57,8 @@ module tb_pecon_bram();
     
     my_bram #(
         .BRAM_ADDR_WIDTH(BRAM_ADDR_WIDTH),
-        .INIT_FILE("input.txt"),
-        .OUT_FILE("output.txt")
+        .INIT_FILE("/csehome/dohbaek/HSD_2018_T1/utility/input_hex.txt"),
+        .OUT_FILE("/csehome/dohbaek/HSD_2018_T1/utility/output_hex.txt")
     ) u_mem (
         .BRAM_ADDR(BRAM_ADDR[BRAM_ADDR_WIDTH-1:0]),
         .BRAM_CLK(BRAM_CLK),

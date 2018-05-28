@@ -1,0 +1,5 @@
+vhdl xil_defaultlib "../../../bd/design_2/ip/design_2_axi_bram_ctrl_0_0/sim/design_2_axi_bram_ctrl_0_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_2/ip/design_2_myip_0_0/src/floating_point_0/sim/floating_point_0.vhd" 
+vhdl xil_defaultlib "../../../bd/design_2/ip/design_2_rst_ps7_0_50M_0/sim/design_2_rst_ps7_0_50M_0.vhd" 
+
+nosort

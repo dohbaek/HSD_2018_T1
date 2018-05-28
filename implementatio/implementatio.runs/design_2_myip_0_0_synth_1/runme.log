@@ -1,0 +1,1053 @@
+
+*** Running vivado
+    with args -log design_2_myip_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_2_myip_0_0.tcl
+
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:19 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_2_myip_0_0.tcl -notrace
+Command: synth_design -top design_2_myip_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 22847 
+awk: symbol lookup error: awk: undefined symbol: mpfr_z_sub
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1085.352 ; gain = 152.086 ; free physical = 1945 ; free virtual = 12695
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_2_myip_0_0' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/synth/design_2_myip_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0.v:4]
+INFO: [Synth 8-638] synthesizing module 'myip_v1_0_S00_AXI' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-226] default block is never used [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0_S00_AXI.v:232]
+INFO: [Synth 8-226] default block is never used [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0_S00_AXI.v:373]
+INFO: [Synth 8-638] synthesizing module 'pe_con' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe_controller.v:3]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe_controller.v:46]
+INFO: [Synth 8-638] synthesizing module 'my_pe' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe.v:1]
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "block" *) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe.v:26]
+INFO: [Synth 8-638] synthesizing module 'floating_point_0' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/floating_point_0/synth/floating_point_0.vhd:74]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at '/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/floating_point_0/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/floating_point_0/synth/floating_point_0.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'floating_point_0' (35#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/floating_point_0/synth/floating_point_0.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'my_pe' (36#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe.v:1]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.v:70]
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0_clk_wiz' [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-638] synthesizing module 'IBUF' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
+INFO: [Synth 8-256] done synthesizing module 'IBUF' (37#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:14146]
+INFO: [Synth 8-638] synthesizing module 'MMCME2_ADV' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-256] done synthesizing module 'MMCME2_ADV' (38#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:20414]
+INFO: [Synth 8-638] synthesizing module 'BUFG' [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'BUFG' (39#1) [/opt/Xilinx/Vivado/2016.4/scripts/rt/data/unisim_comp.v:607]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0_clk_wiz' (40#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0_clk_wiz.v:68]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (41#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.v:70]
+INFO: [Synth 8-256] done synthesizing module 'pe_con' (42#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/src/pe_controller.v:3]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0_S00_AXI' (43#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0_S00_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'myip_v1_0' (44#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ipshared/cfb4/hdl/myip_v1_0.v:4]
+INFO: [Synth 8-256] done synthesizing module 'design_2_myip_0_0' (45#1) [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/synth/design_2_myip_0_0.v:56]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized299 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized299 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized299 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized253 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized253 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized253 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized265 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized265 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized265 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized263 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized263 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized263 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized261 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized261 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized261 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized259 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized259 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized259 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized257 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized257 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized257 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized255 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized255 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized255 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized285 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized285 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized285 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized287 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized287 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized287 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized297 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized297 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized297 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized297 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized297 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized295 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized295 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized295 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized295 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized295 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized293 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized293 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized293 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized293 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized293 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized291 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized291 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized291 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized291 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized291 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized289 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized289 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized289 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized283 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized283 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized283 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized281 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized281 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized281 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized279 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized279 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized279 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized279 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized279 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[6]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[5]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[4]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[3]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[2]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[1]
+WARNING: [Synth 8-3331] design carry_chain__parameterized14 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized1 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design special_detect__parameterized0 has unconnected port A[56]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized251 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized251 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized251 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized249 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized249 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized249 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized247 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized247 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized247 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized247 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized247 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized13 has unconnected port B[9]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized277 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized277 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized277 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized275 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized275 has unconnected port SSET
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1192.820 ; gain = 259.555 ; free physical = 1437 ; free virtual = 12190
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1192.820 ; gain = 259.555 ; free physical = 1419 ; free virtual = 12172
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 5714 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc] for cell 'inst/myip_v1_0_S00_AXI_inst/u_con/u_clk/inst'
+Finished Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc] for cell 'inst/myip_v1_0_S00_AXI_inst/u_con/u_clk/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_myip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_myip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.runs/design_2_myip_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.runs/design_2_myip_0_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.runs/design_2_myip_0_0_synth_1/dont_touch.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_2_myip_0_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_2_myip_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 544 instances were transformed.
+  FDE => FDRE: 544 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.53 ; elapsed = 00:00:00.30 . Memory (MB): peak = 1652.344 ; gain = 0.000 ; free physical = 728 ; free virtual = 11481
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 642 ; free virtual = 11396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:27 ; elapsed = 00:00:25 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 642 ; free virtual = 11396
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[0].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[10].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[11].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[12].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[13].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[14].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[15].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[1].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[2].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[3].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[4].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[5].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[6].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[7].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[8].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/\genpe[9].u_pe /u_float_dsp. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/u_clk. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for inst/myip_v1_0_S00_AXI_inst/u_con/u_clk/inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:26 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 641 ; free virtual = 11394
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "flow_sel_pre_op" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_nan" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_inf" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "c_zero" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "counter" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5583] The signal peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:29 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 1885 ; free virtual = 12640
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |clk_wiz_0_clk_wiz__GC0 |           1|         3|
+|2     |pe_con__GCB0           |           1|     28356|
+|3     |pe_con__GCB1           |           1|      9292|
+|4     |pe_con__GCB2           |           1|     18584|
+|5     |pe_con__GCB3           |           1|     19150|
+|6     |myip_v1_0_S00_AXI__GC0 |           1|       790|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_b/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_c/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "conv_exp.downsize_exp/COND_DET/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "lrg_almost_over" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "FMA_OP.OP/special_detect/detector_a/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[31] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[30] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[29] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[28] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[27] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[26] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[25] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[24] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[23] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[22] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[21] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[20] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[19] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[18] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[17] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[16] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[15] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[14] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[13] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[12] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[11] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[1] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_addr[0] driven by constant 0
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_en driven by constant 1
+INFO: [Synth 8-3917] design design_2_myip_0_0 has port m00_bram_rst driven by constant 0
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[1].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[1].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[2].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[2].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[3].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[3].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[5].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[5].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[7].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[7].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[8].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[8].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[9].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[9].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[4].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[4].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[12].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[12].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[11].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[11].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[10].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[10].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[6].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[6].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[15].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[15].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[14].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[14].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[13].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[13].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "genpe[0].u_pe/peram_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal genpe[0].u_pe/peram_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "globalmem_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal globalmem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[1].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[1].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/DIST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[0].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/bma_exp_cc/CARRYS_Q_DEL.FAST_DEL.CARRY_FD) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/conv_exp.downsize_exp/SIGN_RND_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.IV_OP_REG/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.UNDERFLOW_reg) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.OVERFLOW_reg) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[23]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__21.
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[2].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[2].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/DIST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[0].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/bma_exp_cc/CARRYS_Q_DEL.FAST_DEL.CARRY_FD) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/INV_OP_DEL/i_pipe/opt_has_pipe.i_pipe[9].pipe_reg[9][0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/conv_exp.downsize_exp/SIGN_RND_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.IV_OP_REG/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.UNDERFLOW_reg) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/OP/FLAGS_REG.NOT_LATE_UPDATE_GEN.OVERFLOW_reg) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[23]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__20.
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[18] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[19] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[23] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[20] )
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[3].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[3].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/EXP/DEC_STATE_PRE_OP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/ALIGN_BLK/FRAC_ADDSUB/LOGIC_ADD.FRAC_ADDSUB/DIST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[0].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/NORM_SHIFT/MUX_LOOP[1].DEL_SHIFT/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Synth 8-3332] Sequential element (FMA_OP.OP/addsub/add/NORM/ROUND/EXP_INC_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]) is unused and will be removed from module floating_point_v7_1_3_viv__19.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u_coni_0/\genpe[5].u_pe/u_float_dsp /U0/i_synth/\FMA_OP.OP/addsub/add/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[15] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[5].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[7].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_0/genpe[8].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[9].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_1/genpe[4].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[12].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[11].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[10].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_2/genpe[6].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/state_reg[2]' (FDR) to 'u_coni_3/state_d_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/state_d_reg[3]' (FDR) to 'u_coni_3/state_d_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[15].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[14].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[13].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/ZERO_SMALLEST_DEL/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.zero_smallest_i_delay/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[50]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[1]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_Z_D/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/ALIGN_BLK/aligner.ALIGN_SHIFT/ALIGN_SHIFT/MUX_LOOP[1].SKEW_DIST_DEL.DEL_DIST/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/EXP/NORMAL_NORM_DIST.ADD_MANT_DELAY/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'u_coni_3/genpe[0].u_pe/u_float_dsp/U0/i_synth/FMA_OP.OP/addsub/add/NORM/ADD_MANT_DELAY_2/i_pipe/opt_has_pipe.first_q_reg[49]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_insti_4/axi_rresp_reg[0]' (FDRE) to 'myip_v1_0_S00_AXI_insti_4/axi_rresp_reg[1]'
+INFO: [Synth 8-3886] merging instance 'myip_v1_0_S00_AXI_insti_4/axi_bresp_reg[0]' (FDRE) to 'myip_v1_0_S00_AXI_insti_4/axi_bresp_reg[1]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:00 ; elapsed = 00:00:59 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 1177 ; free virtual = 11935
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------+------------+----------+
+|      |RTL Partition          |Replication |Instances |
++------+-----------------------+------------+----------+
+|1     |clk_wiz_0_clk_wiz__GC0 |           1|         3|
+|2     |pe_con__GCB0           |           1|     27907|
+|3     |pe_con__GCB1           |           1|      9143|
+|4     |pe_con__GCB2           |           1|     18285|
+|5     |pe_con__GCB3           |           1|     18659|
+|6     |myip_v1_0_S00_AXI__GC0 |           1|       536|
++------+-----------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:08 ; elapsed = 00:01:07 . Memory (MB): peak = 1652.344 ; gain = 719.078 ; free physical = 1238 ; free virtual = 11997
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "inst/myip_v1_0_S00_AXI_inst/u_con/globalmem_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal inst/myip_v1_0_S00_AXI_inst/u_con/globalmem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+INFO: [Synth 8-5784] Optimized 13 bits of RAM "inst/myip_v1_0_S00_AXI_inst/u_con/globalmem_reg" due to constant propagation. Old ram width 32 bits, new ram width 19 bits.
+INFO: [Synth 8-5583] The signal inst/myip_v1_0_S00_AXI_inst/u_con/globalmem_reg is implemented as block RAM but is better mapped onto distributed LUT RAM for the following reason(s): The depth (4 address bits) is shallow. Please use attribute (* ram_style = "distributed" *) to instruct Vivado to infer distributed LUT RAM.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:38 ; elapsed = 00:01:38 . Memory (MB): peak = 1677.367 ; gain = 744.102 ; free physical = 1180 ; free virtual = 11943
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-------------------------+------------+----------+
+|      |RTL Partition            |Replication |Instances |
++------+-------------------------+------------+----------+
+|1     |clk_wiz_0_clk_wiz__GC0   |           1|         3|
+|2     |myip_v1_0_S00_AXI__GC0   |           1|       536|
+|3     |design_2_myip_0_0_GT1    |           1|      9077|
+|4     |design_2_myip_0_0_GT0    |           1|     13618|
+|5     |design_2_myip_0_0_GT1__1 |           1|     37685|
+|6     |design_2_myip_0_0_GT2    |           1|     13614|
++------+-------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[1].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[1].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[2].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[2].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[3].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[3].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/globalmem_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[4].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[4].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[5].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[5].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[6].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[6].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[7].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[7].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[8].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[8].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[9].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[9].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[10].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[10].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[11].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[11].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[12].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[12].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[13].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[13].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[14].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[14].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[15].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[15].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[0].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance inst/myip_v1_0_S00_AXI_inst/u_con/genpe[0].u_pe/peram_reg (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:49 ; elapsed = 00:01:48 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:50 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:50 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:55 ; elapsed = 00:01:55 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2137 ; free virtual = 12902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:55 ; elapsed = 00:01:55 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2138 ; free virtual = 12903
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |BUFG       |     2|
+|2     |CARRY4     |   120|
+|3     |DSP48E1    |    16|
+|4     |DSP48E1_1  |    16|
+|5     |LUT1       |   209|
+|6     |LUT2       |  1846|
+|7     |LUT3       |  2299|
+|8     |LUT4       |  2596|
+|9     |LUT5       |  1590|
+|10    |LUT6       |  4672|
+|11    |MMCME2_ADV |     1|
+|12    |MUXCY      |  3568|
+|13    |MUXF7      |   208|
+|14    |MUXF8      |    48|
+|15    |RAMB18E1   |    16|
+|16    |RAMB18E1_1 |     1|
+|17    |SRL16E     |  1168|
+|18    |XORCY      |  1536|
+|19    |FDE        |   528|
+|20    |FDRE       | 18307|
+|21    |IBUF       |     1|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:56 ; elapsed = 00:01:56 . Memory (MB): peak = 1697.625 ; gain = 764.359 ; free physical = 2137 ; free virtual = 12902
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 22 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:41 ; elapsed = 00:01:43 . Memory (MB): peak = 1697.625 ; gain = 224.746 ; free physical = 2137 ; free virtual = 12902
+Synthesis Optimization Complete : Time (s): cpu = 00:01:57 ; elapsed = 00:01:56 . Memory (MB): peak = 1697.633 ; gain = 764.367 ; free physical = 2138 ; free virtual = 12903
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5803 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc] for cell 'inst/myip_v1_0_S00_AXI_inst/u_con/u_clk/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc:57]
+INFO: [Timing 38-2] Deriving generated clocks [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc:57]
+Finished Parsing XDC File [/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.srcs/sources_1/bd/design_2/ip/design_2_myip_0_0/src/clk_wiz_0_4/clk_wiz_0.xdc] for cell 'inst/myip_v1_0_S00_AXI_inst/u_con/u_clk/inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1552 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 1024 instances
+  FDE => FDRE: 528 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+663 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:09 ; elapsed = 00:02:07 . Memory (MB): peak = 2210.812 ; gain = 1210.043 ; free physical = 1787 ; free virtual = 12552
+INFO: [Common 17-1381] The checkpoint '/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.runs/design_2_myip_0_0_synth_1/design_2_myip_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1174] Renamed 4437 cell refs.
+INFO: [Common 17-1381] The checkpoint '/csehome/dohbaek/HSD_2018_T1/implementatio/implementatio.runs/design_2_myip_0_0_synth_1/design_2_myip_0_0.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.26 . Memory (MB): peak = 2234.824 ; gain = 0.000 ; free physical = 1674 ; free virtual = 12505
+INFO: [Common 17-206] Exiting Vivado at Mon May 28 10:31:01 2018...

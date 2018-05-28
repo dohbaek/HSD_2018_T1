@@ -1,7 +1,7 @@
 module my_bram # (
     parameter integer BRAM_ADDR_WIDTH = 15, // 4x8192
-    parameter INIT_FILE = "input.txt",
-    parameter OUT_FILE = "output.txt"
+    parameter INIT_FILE = "/csehome/dohbaek/HSD_2018_T1/utility/input_hex.txt",
+    parameter OUT_FILE = "/csehome/dohbaek/HSD_2018_T1/utility/output_hex.txt"
   )(
     input wire [BRAM_ADDR_WIDTH-1:0] BRAM_ADDR,
     input wire BRAM_CLK,
