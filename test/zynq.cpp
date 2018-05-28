@@ -31,33 +31,31 @@ double fpga_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float 
 	//Run IP and copy value to DRAM space
 	// memory load
 	int i;
-  int foo;
-	float output_fpga;
+   	int foo;
 
-  foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
-  float *fpga_bram = mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
-  for (i = 0; i < matrix_size * matrix_size; i++)
-  {
-    *(fpga_bram + i) = ipt_matrix_f16[i];
-  }
+ 	foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
+  	float *fpga_bram = (float *) mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
+  	for (i = 0; i < matrix_size * matrix_size; i++)
+  	{
+   		*(fpga_bram + i) = ipt_matrix_f16[i];
+  	}
 	for (;i<matrix_size*matrix_size+matrix_size;i++)
 	{
 		*(fpga_bram + i) = ipt_vector_f16[i & ((1 << SIZE_SHIFTER) - 1)];
 	}
 
 	// run
-  unsigned int *fpga_ip = mmap(NULL, sizeof(float), PROT_WRITE, MAP_SHARED, foo, INSTRUCTION_ADDR);
-  *fpga_ip = MAGIC_CODE;
+  	unsigned int *fpga_ip = (unsigned int *) mmap(NULL, sizeof(float), PROT_WRITE, MAP_SHARED, foo, INSTRUCTION_ADDR);
+  	*fpga_ip = MAGIC_CODE;
 
-  // wait
-  while (*fpga_ip == MAGIC_CODE);
+  	// wait
+  	while (*fpga_ip == MAGIC_CODE);
 
 	// result
 	for (i = 0; i < matrix_size; i++)
 	{
 		your_vector_f32[i] = *(fpga_bram+i);
 	}
-
 
 	gettimeofday(&end, NULL);
 
