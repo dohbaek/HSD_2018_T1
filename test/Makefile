@@ -8,7 +8,7 @@ csrcs = main.cpp zynq.cpp
 cobjs = $(csrcs:.cpp=.o)
 chdrs = zynq.h
 
-cflags = -std=c++14 -DHLS_NO_XIL_FPO_LIB -O2 -Wall -Werror -Wno-pointer-arith -DPRINT_VALUE
+cflags = -std=c++14 -DHLS_NO_XIL_FPO_LIB -O2 -DPRINT_VALUE
 includes = -I. -I./hls
 libs=
 

@@ -30,18 +30,19 @@ double fpga_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float 
 
 	//Run IP and copy value to DRAM space
 	// memory load
-	int i;
+	int i, j;
    	int foo;
 
- 	foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
+   	foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
   	float *fpga_bram = (float *) mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
   	for (i = 0; i < matrix_size * matrix_size; i++)
   	{
-   		*(fpga_bram + i) = ipt_matrix_f16[i];
+  		memcpy(fpga_bram + i, ipt_matrix_f16 + i, sizeof(uint32_t));
   	}
-	for (;i<matrix_size*matrix_size+matrix_size;i++)
+	for (j = 0; i < matrix_size*matrix_size+matrix_size;j++)
 	{
-		*(fpga_bram + i) = ipt_vector_f16[i & ((1 << SIZE_SHIFTER) - 1)];
+		memcpy(fpga_bram + i, ipt_vector_f16 + j, sizeof(uint32_t));
+		i++;
 	}
 
 	// run
@@ -85,7 +86,7 @@ static inline float f16_to_f32(const uint32_t *input)
 
 	uint32_t half_precision = 0;
 	memcpy(&half_precision, iptc + 1, 1);
-	memcpy(((void*)&half_precision) + 1, iptc, 1);
+	memcpy(((char*)&half_precision) + 1, iptc, 1);
 
 	uint32_t opt 	= ((half_precision & 0x8000) << 16)
 			| ((((half_precision & 0x7C00) >> 10) + 112) << 23)

@@ -48,12 +48,14 @@ int main(int argc, char **argv)
 		for(size_t i = 0 ; i < matrix_size * matrix_size ; i++)
 		{
 			ipt_file >> ipt_matrix_f32[i];
-			half val(ipt_matrix_f32[i]);
+			float val(ipt_matrix_f32[i]);
 
 			//Converting to Big endian
 			ipt_matrix_f16[i] = 0;
-			memcpy(((void*)(ipt_matrix_f16 + i)) + 2, ((void*)&val) + 1, 1);
-			memcpy(((void*)(ipt_matrix_f16 + i)) + 3, ((void*)&val) + 0, 1);
+			memcpy(((char*)(ipt_matrix_f16 + i)) + 0, ((char*)&val) + 3, 1);
+			memcpy(((char*)(ipt_matrix_f16 + i)) + 1, ((char*)&val) + 2, 1);
+			memcpy(((char*)(ipt_matrix_f16 + i)) + 2, ((char*)&val) + 1, 1);
+			memcpy(((char*)(ipt_matrix_f16 + i)) + 3, ((char*)&val) + 0, 1);
 		}
 		
 		for(size_t i = 0 ; i < matrix_size ; i++)
@@ -63,8 +65,10 @@ int main(int argc, char **argv)
 
 			//Converting to Big endian
 			ipt_vector_f16[i] = 0;
-			memcpy(((void*)(ipt_vector_f16 + i)) + 2, ((void*)&val) + 1, 1);
-			memcpy(((void*)(ipt_vector_f16 + i)) + 3, ((void*)&val) + 0, 1);
+			memcpy(((char*)(ipt_vector_f16 + i)) + 0, ((char*)&val) + 3, 1);
+			memcpy(((char*)(ipt_vector_f16 + i)) + 1, ((char*)&val) + 2, 1);
+			memcpy(((char*)(ipt_vector_f16 + i)) + 2, ((char*)&val) + 1, 1);
+			memcpy(((char*)(ipt_vector_f16 + i)) + 3, ((char*)&val) + 0, 1);
 
 			opt_vector_f32[i] = 0;
 		}
