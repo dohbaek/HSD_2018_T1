@@ -1,4 +1,5 @@
 #include "zynq.h"
+#include <byteswap.h>
 
 #include <cstring>
 #include <sys/time.h>
@@ -34,19 +35,23 @@ double fpga_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float 
    	int foo;
 
    	foo = open("/dev/mem", O_RDWR | O_NONBLOCK);
-  	float *fpga_bram = (float *) mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
+  	uint32_t *fpga_bram = (uint32_t *) mmap(NULL, (matrix_size*matrix_size+matrix_size)* sizeof(float), PROT_WRITE, MAP_SHARED, foo, 0x40000000);
   	for (i = 0; i < matrix_size * matrix_size; i++)
   	{
-  		memcpy(fpga_bram + i, ipt_matrix_f16 + i, sizeof(uint32_t));
+  		uint32_t source = *(ipt_matrix_f16 + i);
+  		//source = __bswap_32(source);
+  		memcpy(fpga_bram + i, &source, sizeof(uint32_t));
   	}
 	for (j = 0; i < matrix_size*matrix_size+matrix_size;j++)
 	{
-		memcpy(fpga_bram + i, ipt_vector_f16 + j, sizeof(uint32_t));
+		uint32_t source = *(ipt_vector_f16 + j);
+		//source = __bswap_32(source);
+		memcpy(fpga_bram + i, &source, sizeof(uint32_t));
 		i++;
 	}
 
 	// run
-  	unsigned int *fpga_ip = (unsigned int *) mmap(NULL, sizeof(float), PROT_WRITE, MAP_SHARED, foo, INSTRUCTION_ADDR);
+  	volatile unsigned int *fpga_ip = (unsigned int *) mmap(NULL, sizeof(float), PROT_WRITE, MAP_SHARED, foo, INSTRUCTION_ADDR);
   	*fpga_ip = MAGIC_CODE;
 
   	// wait
@@ -55,7 +60,7 @@ double fpga_calculate(uint32_t *ipt_matrix_f16, uint32_t *ipt_vector_f16, float 
 	// result
 	for (i = 0; i < matrix_size; i++)
 	{
-		your_vector_f32[i] = *(fpga_bram+i);
+		memcpy(your_vector_f32 + i, fpga_bram+i, sizeof(uint32_t));
 	}
 
 	gettimeofday(&end, NULL);
